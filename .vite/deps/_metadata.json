@@ -1,0 +1,23 @@
+{
+  "hash": "d796a8b2",
+  "browserHash": "e666e562",
+  "optimized": {
+    "vue": {
+      "src": "../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "ea5d68ec",
+      "needsInterop": false
+    },
+    "vue-writer": {
+      "src": "../../node_modules/vue-writer/dist/vue-writer.esm.js",
+      "file": "vue-writer.js",
+      "fileHash": "6b5b6f69",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-R225DL6P": {
+      "file": "chunk-R225DL6P.js"
+    }
+  }
+}

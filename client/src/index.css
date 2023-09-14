@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font: "Ubuntu Mono", "Cascadia Code", monospace;
+  --stereo-blue: rgba(0, 0, 255, 0.25);
+  --stereo-red: rgba(255, 0, 0, 0.25);
+  --terminal-main: hsl(128, 100%, 70%);
+  --terminal-main-dark: hsl(128, 100%, 10%);
+  --terminal-main-light: hsl(128, 100%, 20%);
+  --terminal-gradient-stops: (var(--terminal-main-dark), var(----terminal-main-light));
+  --terminal-display: inset 0 0 3px 3px#000000;
+  font-family: var(--font);
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+pre {
+  font-family: var(--font), monospace;
+}
+
+main[data-theme='terminal'] {
+  --terminal-main: hsl(128, 100%, 70%);
+  --terminal-main-dark: hsl(112, 100%, 10%);
+  --terminal-main-light: hsl(112, 100%, 20%);
+}
+
+main[data-theme='love'] {
+  --terminal-main: hsl(0, 100%, 70%);
+  --terminal-main-dark: hsl(0, 100%, 10%);
+  --terminal-main-light: hsl(0, 100%, 20%);
+}
+
+main[data-theme='magic'] {
+  --terminal-main: hsl(255, 100%, 70%);
+  --terminal-main-dark: hsl(255, 100%, 10%);
+  --terminal-main-light: hsl(255, 100%, 20%);
+}
+
+main[data-theme='optimism'] {
+  --terminal-main: hsl(60, 100%, 70%);
+  --terminal-main-dark: hsl(60, 100%, 10%);
+  --terminal-main-light: hsl(60, 100%, 20%);
+}
+
+main[data-theme='ocean'] {
+  --terminal-main: hsl(180, 100%, 70%);
+  --terminal-main-dark: hsl(180, 100%, 10%);
+  --terminal-main-light: hsl(180, 100%, 20%);
+}
+
+ocean ::-webkit-scrollbar {
+  width: 0;
+}
+
+
+body {
+  overflow: hidden;
+}
